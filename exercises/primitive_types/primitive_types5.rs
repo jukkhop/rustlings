@@ -9,35 +9,6 @@ fn main() {
     println!("{} is {} years old.", name, age);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Take a look at the Data Types -> The Tuple Type section of the book:
 // https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
 // Particularly the part about destructuring (second to last example in the section).

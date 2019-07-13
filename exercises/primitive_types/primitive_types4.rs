@@ -14,30 +14,6 @@ fn main() {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Take a look at the Understanding Ownership -> Slices -> Other Slices section of the book:
 // https://doc.rust-lang.org/book/ch04-03-slices.html
 // and use the starting and ending indices of the items in the Array
