@@ -10,34 +10,6 @@ fn current_favorite_color() -> String {
     "blue"
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // The `current_favorite_color` function is currently returning a string slice with the `'static`
 // lifetime. We know this because the data of the string lives in our code itself -- it doesn't
 // come from a file or user input or another program -- so it will live as long as our program

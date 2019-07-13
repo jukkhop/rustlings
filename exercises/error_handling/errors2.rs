@@ -44,22 +44,6 @@ mod tests {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // One way to handle this is using a `match` statement on
 // `item_quantity.parse::<i32>()` where the cases are `Ok(something)` and
 // `Err(something)`. This pattern is very common in Rust, though, so there's

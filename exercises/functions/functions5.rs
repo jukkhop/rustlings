@@ -10,34 +10,6 @@ fn square(num: i32) -> i32 {
     num * num;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // This is a really common error that can be fixed by removing one character.
 // It happens because Rust distinguishes between expressions and statements: expressions return
 // a value based on its operand, and statements simply return a () type which behaves just like `void` in C/C++ language.

@@ -17,30 +17,6 @@ fn main() {
     );
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Try using a `match` statement where the arms are `Some(thing)` and `None`.
 // Or set a default value to print out if you get `None` by using the
 // function `unwrap_or`.

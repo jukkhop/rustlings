@@ -8,36 +8,6 @@ fn main() {
     println!("The second number is {}", ???);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // While you could use a destructuring `let` for the tuple here, try
 // indexing into it instead, as explained in the last example of the
 // Data Types -> The Tuple Type section of the book:

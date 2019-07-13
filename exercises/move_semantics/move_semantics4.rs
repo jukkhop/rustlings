@@ -26,17 +26,6 @@ fn fill_vec() -> Vec<i32> {
     vec
 }
 
-
-
-
-
-
-
-
-
-
-
-
 // Stop reading whenever you feel like you have enough direction :) Or try
 // doing one step and then fixing the compiler errors that result!
 // So the end goal is to:

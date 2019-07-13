@@ -10,34 +10,6 @@ fn main() {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // The compiler message is saying that Rust cannot infer the type that the
 // variable binding `x` has with what is given here.
 // What happens if you annotate line 5 with a type annotation?

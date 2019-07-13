@@ -24,19 +24,6 @@ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
     vec
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // So `vec0` is being *moved* into the function `fill_vec` when we call it on
 // line 7, which means it gets dropped at the end of `fill_vec`, which means we
 // can't use `vec0` again on line 10 (or anywhere else in `main` after the

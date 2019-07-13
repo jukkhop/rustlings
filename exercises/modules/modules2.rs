@@ -24,22 +24,6 @@ fn main() {
     );
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // The delicious_snacks module is trying to present an external
 // interface (the `fruit` and `veggie` constants) that is different than
 // its internal structure (the `fruits` and `veggies` modules and

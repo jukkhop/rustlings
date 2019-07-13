@@ -39,25 +39,6 @@ mod tests {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // `Err` is one of the variants of `Result`, so what the 2nd test is saying
 // is that `generate_nametag_text` should return a `Result` instead of an
 // `Option`.
