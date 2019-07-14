@@ -7,7 +7,7 @@ fn main() {
 }
 
 fn current_favorite_color() -> String {
-    "blue"
+    String::from("blue")
 }
 
 // The `current_favorite_color` function is currently returning a string slice with the `'static`

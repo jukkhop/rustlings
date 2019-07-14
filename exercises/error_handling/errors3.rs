@@ -6,17 +6,20 @@
 
 use std::num::ParseIntError;
 
-fn main() {
-    let mut tokens = 100;
-    let pretend_user_input = "8";
+fn buy_items(mut tokens: i32, pretend_user_input: &str) -> String {
 
-    let cost = total_cost(pretend_user_input)?;
-
-    if cost > tokens {
-        println!("You can't afford that many!");
-    } else {
-        tokens -= cost;
-        println!("You now have {} tokens.", tokens);
+    match total_cost(pretend_user_input) {
+        Ok(cost) => {
+            if cost > tokens {
+                return format!("You can't afford that many!");
+            } else {
+                tokens -= cost;
+                return format!("You now have {} tokens.", tokens);
+            }
+        },
+        Err(err) => {
+            return err.to_string();
+        }
     }
 }
 
@@ -28,6 +31,25 @@ pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
     Ok(qty * cost_per_item + processing_fee)
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_ok_case() {
+        assert_eq!(buy_items(100, "8"), String::from("You now have 59 tokens."));
+    }
+
+    #[test]
+    fn test_too_many_case() {
+        assert_eq!(buy_items(100, "100"), String::from("You can't afford that many!"));
+    }
+
+    #[test]
+    fn test_invalid_case() {
+        assert_eq!(buy_items(100, "abcd"), String::from("invalid digit found in string"));
+    }
+}
 // Since the `?` operator returns an `Err` early if the thing it's trying to
 // do fails, you can only use the `?` operator in functions that have a
 // `Result` as their return type.
